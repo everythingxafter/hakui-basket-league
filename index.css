@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+.background-hakui {
+  background-image: url("./image/background-black.jpg");
+  background-color: rgba(0, 0, 0, 0.728);
+  background-blend-mode: darken;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hbl-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hbl-logo {
+  max-width: 100px;
+}
+
+.status-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  padding: 1em 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
