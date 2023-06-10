@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hakui HBL</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div class="background-hakui">
@@ -26,9 +21,11 @@
           <h3 id="statusMessage">Now Playing: -</h3>
         </div>
         <div>
-          <h3>Sering dipakai</h3>
+          <div class="button-header">
+            <h3>Sering dipakai</h3>
+          </div>
           <div class="row">
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -36,10 +33,12 @@
                   align-items: center;
                 "
               >
-                <p>Q</p>
+                <div class="button-info">
+                  <p>Q</p>
+                </div>
                 <button
                   id="audio1-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio1', 'Main 1')"
                 >
                   Main 1
@@ -47,7 +46,7 @@
                 <audio id="audio1" src="./audio/fix/main 1 fix.mp3"></audio>
               </div>
             </div>
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -55,10 +54,12 @@
                   align-items: center;
                 "
               >
-                <p>W</p>
+                <div class="button-info">
+                  <p>W</p>
+                </div>
                 <button
                   id="audio2-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio2', 'Main 2')"
                 >
                   Main 2
@@ -66,7 +67,7 @@
                 <audio id="audio2" src="./audio/fix/main 2 fix.mp3"></audio>
               </div>
             </div>
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -74,10 +75,12 @@
                   align-items: center;
                 "
               >
-                <p>E</p>
+                <div class="button-info">
+                  <p>E</p>
+                </div>
                 <button
                   id="audio3-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio3', 'Main 3')"
                 >
                   Main 3
@@ -87,7 +90,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-6 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -95,10 +98,12 @@
                   align-items: center;
                 "
               >
-                <p>A</p>
+                <div class="button-info">
+                  <p>A</p>
+                </div>
                 <button
                   id="audio4-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio4', 'Main 4')"
                 >
                   Main 4
@@ -109,7 +114,7 @@
                 ></audio>
               </div>
             </div>
-            <div class="col-md-6 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-6 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -117,10 +122,12 @@
                   align-items: center;
                 "
               >
-                <p>S</p>
+                <div class="button-info">
+                  <p>S</p>
+                </div>
                 <button
                   id="audio5-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio5', 'Offense Cepat')"
                 >
                   Offense Cepat
@@ -131,27 +138,9 @@
                 ></audio>
               </div>
             </div>
-            <!-- <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
-            <div
-              style="display: flex; flex-direction: column; align-items: center"
-            >
-              <p>D</p>
-              <button
-                id="audio6-button"
-                class="btn btn-primary"
-                onclick="playSong('audio6', 'Offense Cepat 2')"
-              >
-                Offense Cepat 2
-              </button>
-              <audio
-                id="audio6"
-                src="./audio/fix/offence cepat 2 fix.mp3"
-              ></audio>
-            </div>
-          </div> -->
           </div>
           <div class="row">
-            <div class="col-md-6 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-6 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -159,10 +148,12 @@
                   align-items: center;
                 "
               >
-                <p>Z</p>
+                <div class="button-info">
+                  <p>Z</p>
+                </div>
                 <button
                   id="audio7-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio7', 'Menit Terakhir')"
                 >
                   Menit Terakhir
@@ -173,7 +164,7 @@
                 ></audio>
               </div>
             </div>
-            <div class="col-md-6 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-6 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -181,10 +172,12 @@
                   align-items: center;
                 "
               >
-                <p>X</p>
+                <div class="button-info">
+                  <p>X</p>
+                </div>
                 <button
                   id="audio8-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio8', 'Point Sound')"
                 >
                   Point Sound
@@ -192,13 +185,15 @@
                 <audio id="audio8" src="./audio/fix/point.mp3"></audio>
               </div>
             </div>
-            <!-- <div class="col-md-4 d-flex justify-content-center mb-2 mt-2"></div> -->
+            <!-- <div class="col-md-4 d-flex justify-content-center mb-3"></div> -->
           </div>
         </div>
         <div>
-          <h3>Jarang dipakai</h3>
+          <div class="button-header">
+            <h3>Jarang dipakai</h3>
+          </div>
           <div class="row">
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -206,10 +201,12 @@
                   align-items: center;
                 "
               >
-                <p>I</p>
+                <div class="button-info">
+                  <p>I</p>
+                </div>
                 <button
                   id="audio9-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio9', 'Panggilan Pemain')"
                 >
                   Panggilan Pemain
@@ -220,7 +217,7 @@
                 ></audio>
               </div>
             </div>
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -228,10 +225,12 @@
                   align-items: center;
                 "
               >
-                <p>O</p>
+                <div class="button-info">
+                  <p>O</p>
+                </div>
                 <button
                   id="audio10-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio10', 'Before Jump ball')"
                 >
                   Before Jump ball
@@ -239,7 +238,7 @@
                 <audio id="audio10" src="./audio/fix/intro 3 full.mp3"></audio>
               </div>
             </div>
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -247,10 +246,12 @@
                   align-items: center;
                 "
               >
-                <p>P</p>
+                <div class="button-info">
+                  <p>P</p>
+                </div>
                 <button
                   id="audio11-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio11', '3 Point')"
                 >
                   3 Point
@@ -260,7 +261,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -268,10 +269,12 @@
                   align-items: center;
                 "
               >
-                <p>K</p>
+                <div class="button-info">
+                  <p>K</p>
+                </div>
                 <button
                   id="audio12-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio12', 'Free throw')"
                 >
                   Free throw
@@ -282,7 +285,7 @@
                 ></audio>
               </div>
             </div>
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -290,10 +293,12 @@
                   align-items: center;
                 "
               >
-                <p>L</p>
+                <div class="button-info">
+                  <p>L</p>
+                </div>
                 <button
                   id="audio13-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio13', '15 Quarter')"
                 >
                   15 Quarter
@@ -301,7 +306,7 @@
                 <audio id="audio13" src="./audio/fix/seru 1 fix.mp3"></audio>
               </div>
             </div>
-            <div class="col-md-4 d-flex justify-content-center mb-2 mt-2">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
               <div
                 style="
                   display: flex;
@@ -309,10 +314,12 @@
                   align-items: center;
                 "
               >
-                <p>B</p>
+                <div class="button-info">
+                  <p>B</p>
+                </div>
                 <button
                   id="audio14-button"
-                  class="btn btn-primary"
+                  class="btn btn-light"
                   onclick="playSong('audio14', 'Indonesia Raya')"
                 >
                   Indonesia Raya
@@ -326,12 +333,15 @@
           </div>
         </div>
       </div>
+      <div class="container footer-hbl">
+        <p>
+          Assalamualaikum Wr.Wb. Look at the star. Look how they shine for you.
+          And everything you do. (:
+        </p>
+      </div>
     </div>
-    <script src="index.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

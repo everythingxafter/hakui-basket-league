@@ -10,6 +10,7 @@ function playSong(audioId, songName) {
         currentAudio.currentTime = 0;
         var currentButton = document.getElementById(currentAudio.id + "-button");
         currentButton.style.backgroundColor = "";
+        currentButton.style.boxShadow = "";
     }
 
     if (audioPlayer.paused) {
@@ -17,17 +18,20 @@ function playSong(audioId, songName) {
         currentAudio = audioPlayer;
         statusMessage.innerText = "Now playing: " + songName;
         button.style.backgroundColor = "red";
+        button.style.boxShadow = "0px 0px 8px 8px darkred"
     } else {
         audioPlayer.pause();
         audioPlayer.currentTime = 0;
         currentAudio = null;
         statusMessage.innerText = "Paused";
         button.style.backgroundColor = "";
+        button.style.boxShadow = "";
     }
 
     audioPlayer.addEventListener("ended", function () {
         statusMessage.innerText = "Done playing: " + songName;
         button.style.backgroundColor = "";
+        button.style.boxShadow = "";
     });
 }
 
