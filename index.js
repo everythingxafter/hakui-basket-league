@@ -49,11 +49,11 @@ document.addEventListener("keydown", function (event) {
             playSong("audio4", "Main 4");
             break;
         case "s":
-            playSong("audio5", "Offense Cepat 1");
+            playSong("audio5", "Offense Cepat");
             break;
-        case "d":
-            playSong("audio6", "Offense Cepat 2");
-            break;
+        // case "d":
+        //     playSong("audio6", "Offense Cepat 2");
+        //     break;
         case "z":
             playSong("audio7", "Menit Terakhir");
             break;
